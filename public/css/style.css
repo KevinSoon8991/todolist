@@ -1,0 +1,108 @@
+
+@keyframes modal-key{
+    from{top:0;}
+    to{top:50px;}
+}
+
+.my-modal{
+    width:50%;
+    margin:auto;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1;
+    display:none;
+    background-color: white;
+    animation-name:modal-key;
+    animation-duration:500ms;
+    animation-fill-mode: forwards;
+}
+
+
+.close{
+    position:absolute;
+    right:10px;
+    font-size: large;
+}
+
+.close:hover{
+    cursor:pointer;
+}
+
+.my-modal-header{
+    background-color: blueviolet;
+    padding:10px;
+    text-align: center;
+    position:relative;
+}
+
+.my-modal-body label, .my-modal-body input, .my-modal-body textarea, .my-modal-body button{
+    display:block;
+    margin-bottom:10px;
+}
+
+.my-modal-body-form{
+    width:80%;
+    margin-left:10px;
+}
+
+.todo-card{
+    width:20%;
+    height:200px;
+    border:1px black solid;
+    border-radius:5px;
+    margin:20px;
+    padding:20px;
+    position:relative;
+    display:inline-block;
+}
+
+.todo-card:hover{
+    cursor:pointer;
+}
+
+.todo-date-modified{
+    display:block;
+    text-align: right;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.todo-id{
+    display:none;
+}
+
+#todo-id-hidden{
+    display:none;
+}
+
+.todo-card i{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#btnadd{
+    display:block;
+}
+
+#frm-login input[type=checkbox]{
+    display:inline-block;
+    margin:5px;
+}
+
+#frm-login input[type=textbox], #frm-login input[type=password], #frm-login button{
+    display:block;
+}
+
+#frm-register label, #frm-register input, #frm-register button{
+    display:block;
+}
+
+#frm-register span, #frm-login span{
+    display:block;
+    color:red;
+}
+
